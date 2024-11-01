@@ -19,5 +19,5 @@ Use the menu at the top to explore different sections of the site. Feel free to 
 - JavaScript
 
 ## Contact Me  
-Feel free to reach out to me at wlillyngo@gmail.com or connect with me on [LinkedIn](www.linkedin.com/in/lillyn-g).
+Feel free to reach out to me at wlillyngo@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/lillyn-g).
 
