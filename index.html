@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lilly Ngo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_main.css">
+    <link rel="stylesheet" href="abt_ct_me.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body style="background-color: #c4cfdb";>
+<body style="background-color: #ebeff3";>
 
     <header>
         <nav class="navbar">
-            <img src="logo.png" alt="Logo" class="navbar-logo">
+            <img src="images/logo.png" alt="Logo" class="navbar-logo">
             <ul>
-                <li><a href="#home"><img src="HOME.png" alt="HOME"></a></li>
-                <li><a href="#about"><img src="ABOUT.png" alt="ABOUT"></a></li>
-                <li><a href="#portfolio"><img src="PROJECTS.png" alt="PROJECTS"></a></li>
-                <li><a href="#contact"><img src="CONTACT.png" alt="CONTACT"></a></li>
+                <li><a href="#home"><img src="images/HOME.png" alt="HOME"></a></li>
+                <li><a href="#about"><img src="images/ABOUT.png" alt="ABOUT"></a></li>
+                <li><a href="#portfolio"><img src="images/PROJECTS.png" alt="PROJECTS"></a></li>
+                <li><a href="#footer-contact" ><img src="images/CONTACT.png" alt="CONTACT"></a></li>
             </ul>
         </nav>
     </header>
@@ -26,17 +28,50 @@
         <span class="fade-in">coder.</span>
         <span class="fade-in">pursuer.</span>
     </h1>
-        <p><span class="fade-in">the expert in anything was once a beginner.</span></p>
+        <p><span class="fade-in">an expert in anything was once a beginner.</span></p>
     </section>
 
-    <section id="about">
-        <h1>About Me:</h1>
-        <p style = "text-align: center;">Hi! I'm Lilly, an undergraduate student currently studying Computer Science and Mathematics at Salisbury University. </p>
+    <section id="about" class="about-section">
+        <div class="fade-in-section">
+            <h1>ABOUT ME:</h1>
+        </div>
+        <div class="about-content"> <!-- Wrap text and image in a flex container -->
+            <div class="about-text">
+                <p class="fade-in-section">Hello! I’m Lilly Ngo, an undergraduate junior at Salisbury University, pursuing a dual major in Computer Science (Software Engineering) and Mathematics (Computational).</p>
+                <p class="fade-in-section">My academic path is both technical and theoretical, as I aim to bridge complex mathematical concepts with innovative software solutions. Alongside my coursework, I’m actively involved in research projects, from predicting heart disease risk with machine learning to exploring fractal dimensions in cellular automata. These experiences have allowed me to discover my love for solving complex problems with creativity and precision.</p>
+                <p class="fade-in-section">I am particularly enthusiastic about creating innovative software solutions that enhance user experiences. My background in mathematics equips me with the analytical skills necessary for tackling complex challenges, and I thrive in collaborative environments where I can contribute to team success.</p>
+                <p class="fade-in-section">In addition to my academic pursuits, I enjoy traveling and trying new foods, which allow me to appreciate diverse perspectives and cultures. I am also a lifelong learner, always seeking opportunities to expand my knowledge and skills in technology!</p>
+                <p class="fade-in-section">Right now, I’m exploring opportunities to expand my skills and dive deeper into software engineering, machine learning, and data analytics. If you’re curious about my work or want to talk, let’s connect! Feel free to reach out through LinkedIn or drop me an email.</p>
+            </div>
+            <img src="images/me2.jpg" alt="me" class="my-face fade-in-image"> <!-- Add fade-in class here if needed -->
+        </div>
     </section>
+    
+    
 
-    <section id="contact">
-        <h1>Contact Me:</h1>
-    </section>
+    <footer id="footer-contact" class="footer-contact">
+        <h1>GET IN TOUCH:</h1>
+        <div class="contact-info">
+            <p style="display: flex; align-items: center;">
+                <i class="fa fa-envelope" style="font-size:36px"></i>&nbsp&nbsp<a href="mailto:wlillyngo@gmail.com">wlillyngo@gmail.com</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                <i class="fa fa-phone" style="font-size:36px"></i>&nbsp&nbsp <a href="tel:+4847142954">(484) 714-2954</a>
+            </p>
+            <p style="display: flex; align-items: center;">
+                <i class="fa fa-linkedin-square" style="font-size:5vh"></i> &nbsp&nbsp <a href="https://www.linkedin.com/in/lillyn-g" target="_blank"> LinkedIn</a>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa fa-github" style="font-size:36px"></i>  &nbsp&nbsp  <a href="https://github.com/ngosterly" target="_blank">GitHub</a>
+            </p>
+        </div>
+    </footer>
+    
+
+    <!-- <div id="contact">
+        <div class="fade-in-section">
+            <h1>Get in Touch!</h1>
+        </div>
+        <div class="fade-in-section">
+            <p>Feel free to reach out!</p>
+        </div>
+    </div> -->
 <!-- 
     <footer>
         <p>&copy; 2024 All photos taken by me.</p>
