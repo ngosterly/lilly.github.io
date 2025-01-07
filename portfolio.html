@@ -32,18 +32,66 @@
 
     <section id="projects">
         <div class="grid-container">
-            <div class="grid-item">
-                <img src="images/heart.png" alt="P1 GIF" width="60%">
-                <h1>Predicting Disease Probability</h1>
-                <p class="summary">This project explores predicting the probability of heart disease based on various data points.</p>
-                <p class="full-text">This project leverages machine learning techniques and healthcare data to predict the likelihood of heart disease in individuals. By analyzing multiple factors, it provides a comprehensive prediction that can assist in early diagnosis and prevention.</p>
-                <button class="read-more-btn">Read More ></button>
+            <div class="grid-item" style="background-image: url('images/heart.png');">
+                <div class="c-container">
+                    <p class="full-text">This project implements a Naïve Bayes machine learning model to predict the likelihood of heart disease, 
+                    using a dataset from the UCI Machine Learning Repository. The dataset features a combination of categorical variables, 
+                    such as sex and chest pain type, alongside continuous data like age and cholesterol levels, 
+                    offering an opportunity to apply a multifaceted approach. It utilized CategoricalNB for categorical features and 
+                    Kernel Density Estimation (KDE) for continuous data, combining both models to enhance prediction accuracy. 
+                    The goal was to optimize both computational efficiency and classification performance while addressing the challenges
+                    of working with real-world healthcare data in an undergraduate collaborative setting. The results demonstrated 
+                    the effectiveness of the hybrid approach, leveraging the strengths of Naïve Bayes for handling rare categories 
+                    and KDE for continuous features, resulting in a robust and practical tool for heart disease prediction.</p>
+                <h1>Predicting Heart Disease Probability Using Naïve Bayes ML</h1></div>
+                <a href="docu/HeartPrediction.pdf" download="HeartDiseasePrediction" class="download-link"> 
+                    <button class="download-btn"></button>
+                </a>
             </div>
-            <div class="grid-item"><img src="images/fractal.jpg" alt="P2 "><h1>Fractal Dimensions</h1></div>
-            <div class="grid-item"><img src="images/dihedreal.png" alt="P3 "><h1>Growth Rate Dimensions</h1></div>
-            <div class="grid-item"><img src="images/gender.jpg" alt="P4 "><h1>Gender Bias in LLMs</h1></div>
-            <div class="grid-item"><img src="images/fatigue.png" alt="P5 "><h1>Fatigue in Healthcare</h1></div>
-            <div class="grid-item"><img src="images/wip.png" alt="WIP"></div>
+            <div class="grid-item" style="background-image: url('images/fractal.png');">
+                <div class="c-container">
+                    <p class="full-text">This research explores cellular automata (CA), algorithmic structures characterized by simple yet 
+                    complex patterns. Each cell in a CA transitions through states based on a defined alphabet and neighborhood rules,
+                    evolving over discrete time steps. Using PascGaloisJE software, I modeled multidimensional CAs, focusing on
+                    analyzing fractal-dimensioned patterns. The study quantifies complexity by counting states and calculating the 
+                    fractal dimension, particularly in sub-triangles, to understand the compositional and fractal properties of CA 
+                    patterns. Through computational simulations, I aimed to uncover the intricate structure of CA-derived patterns.
+                    </p>
+                <h1>Investigations of Fractal Dimensions in Cellular Automata</h1></div>
+                <a href="docu/Investigations of Fractal Dimensions in Cellular Automata.pdf" download="FractalDimensions" class="download-link"> 
+                    <button class="download-btn"></button>
+                </a>
+                
+            </div>
+            <div class="grid-item" style="background-image: url('images/growth.png');">
+                <div class="c-container">
+                    <p class="full-text"></p>
+                <h1> Growth Rate Dimensions for Non-Zero Elements in Cellular Automata</h1></div>
+                
+                
+                
+            </div>
+            <div class="grid-item" style="background-image: url('images/gender.jpg');">
+                <div class="c-container">
+                    <p class="full-text"></p>
+                <h1>Hidden Gender Bias in Large-Language Models</h1></div>
+                
+                
+
+            </div>
+            <div class="grid-item" style="background-image: url('images/fatigue.png');">
+                <div class="c-container">
+                    <p class="full-text"></p>
+                <h1>AI to Reduce Work-Related Fatigue in Healthcare</h1></div>
+                
+                
+
+            </div>
+            <div class="grid-item" style="background-image: url('images/wip.png');">
+                <p class="full-text"></p>
+                <h1>More Coming Soon!</h1><p class="summary"></p>
+                </div>
+                
         </div>
     </section>
     
@@ -62,17 +110,12 @@
     </footer>
 
     <script>
-        document.querySelectorAll('.read-more-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                const fullText = this.previousElementSibling; // Get the full-text paragraph
-                const isVisible = fullText.style.display === 'block';
-                fullText.style.display = isVisible ? 'none' : 'block'; // Toggle visibility
-                this.textContent = isVisible ? 'Read More' : 'Read Less'; // Toggle button text
-            });
+            document.querySelectorAll('.grid-item').forEach(gridItem => {
+        gridItem.addEventListener('click', function () {
+            this.classList.toggle('expanded');
         });
+    });
     </script>
 
 </body>
 </html>
-
-
