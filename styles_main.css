@@ -11,6 +11,14 @@ html, body {
     
 }
 
+.cool-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing:auto;
+    font-weight:500;
+    font-style:normal;
+    /* text-rendering:auto; */
+  }
+
 .navbar {
     font-variant: small-caps;
     display: flex;
