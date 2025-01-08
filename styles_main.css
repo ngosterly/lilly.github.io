@@ -1,6 +1,6 @@
 /* this stylesheet is for the main, navbar, as well as the opening transition */
 html, body {
-    color: rgb(74, 75, 78);
+    color: rgb(77, 77, 77);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -15,17 +15,17 @@ html, body {
     font-variant: small-caps;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Aligns logo on the left and menu on the right */
-    background-color: #6280a149;
+    justify-content: space-between; 
+    background-color: #6d6d6d49;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     z-index: 1000;
 }
 
 .navbar-logo {
-    height: 8vh;
+    height: 5vh;
     padding-left: 1vw;
 }
 
@@ -36,23 +36,47 @@ html, body {
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 5px;
 }
 
 .navbar ul li a img {
-    height: 3vh;
+    height: 1vw;
+    /* max-height: 15px; */
 }
 
 .navbar ul li a {
     color: white;
     padding: 10px 10px;
     background-color: transparent;
-    border-radius: 8px;
-    display: flex;
+    border-radius: 3px;
+    display: block;
+    position: relative; 
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: color 0.5s ease; 
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(128, 166, 209, 0.8);
+    z-index: -1; 
+    transform: scaleY(0); 
+    transform-origin: bottom; 
+    transition: transform 0.5s ease; 
 }
 
 .navbar ul li a:hover {
-    background-color: #91a3b670;
+    color: #b1bbd6; 
+}
+
+.navbar ul li a:hover::after {
+    transform: scaleY(1); 
 }
 
 .hero-image {
