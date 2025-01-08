@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="styles_main.css">
     <link rel="stylesheet" href="port.css">
     <link rel="stylesheet" href="abt_ct_me.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">\
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #ebeff3";>
 
@@ -17,7 +20,7 @@
             <ul>
                 <li><a href="index.html#about"><img src="images/ABOUT.png" alt="ABOUT"></a></li>
                 <li><a href=portfolio.html><img src="images/PROJECTS.png" alt="PROJECTS/WORKS"></a></li>
-                <li><a href="docu/L.ResumeM.pdf"  download="Resume"><img src="images/RESUME.png" alt="RESUME"></a></li>
+                <li><a href="docu/L.ResumeM.pdf"  target="_blank"><img src="images/RESUME.png" alt="RESUME"></a></li>
                 <li><a href="#footer-contact" ><img src="images/CONTACT.png" alt="CONTACT"></a></li>
             </ul>
         </nav>
@@ -25,27 +28,26 @@
 
     <section id="head" class="intro-section">
         <div class="intro-container">
-            <h1>My Projects</h1>
+            <h1 class="cool-font"  style="font-weight: 900;">My Projects</h1>
             
         </div>
-        <p>My interests, deep dives, and research. Click on the tabs to learn more/download some of my papers!</p>
+        <p class="cool-font">My interests, deep dives, and research. Click on the tabs to learn more/download some of my papers!</p>
     </section>
 
-    <section id="projects">
-        <div class="grid-container">
+    <section id="projects" style=" background: linear-gradient(to bottom, transparent 99%, #6d6d6d75 100%);">
+        <div class="cool-font">
+            <div class="grid-container">
             <div class="grid-item" style="background-image: url('images/heart.png');">
                 <div class="c-container">
                     <p class="full-text">This project implements a Naïve Bayes machine learning model to predict the likelihood of heart disease, 
-                    using a dataset from the UCI Machine Learning Repository. The dataset features a combination of categorical variables, 
-                    such as sex and chest pain type, alongside continuous data like age and cholesterol levels, 
-                    offering an opportunity to apply a multifaceted approach. It utilized CategoricalNB for categorical features and 
+                    using a dataset from the UCI Machine Learning Repository. It utilized CategoricalNB for categorical features and 
                     Kernel Density Estimation (KDE) for continuous data, combining both models to enhance prediction accuracy. 
                     The goal was to optimize both computational efficiency and classification performance while addressing the challenges
                     of working with real-world healthcare data in an undergraduate collaborative setting. The results demonstrated 
                     the effectiveness of the hybrid approach, leveraging the strengths of Naïve Bayes for handling rare categories 
                     and KDE for continuous features, resulting in a robust and practical tool for heart disease prediction.</p>
                 <h1>Predicting Heart Disease Probability Using Naïve Bayes ML</h1></div>
-                <a href="docu/HeartPrediction.pdf" download="HeartDiseasePrediction" class="download-link"> 
+                <a href="docu/HeartPrediction.pdf" target="_blank" class="download-link"> 
                     <button class="download-btn"></button>
                 </a>
             </div>
@@ -59,7 +61,7 @@
                     patterns. Through computational simulations, I aimed to uncover the intricate structure of CA-derived patterns.
                     </p>
                 <h1>Investigations of Fractal Dimensions in Cellular Automata</h1></div>
-                <a href="docu/Investigations of Fractal Dimensions in Cellular Automata.pdf" download="FractalDimensions" class="download-link"> 
+                <a href="docu/Investigations of Fractal Dimensions in Cellular Automata.pdf" target="_blank" class="download-link"> 
                     <button class="download-btn"></button>
                 </a>
                 
@@ -88,24 +90,29 @@
                 
 
             </div>
-            <div class="grid-item" style="background-image: url('images/wip.png');">
+            <div class="grid-item" style="background-image: url('images/wip.png'); margin-bottom: 40px;">
                 <p class="full-text"></p>
                 <h1>More Coming Soon!</h1>
                 </div>
                 
         </div>
+        </div>
+        
     </section>
     
     <footer id="footer-contact" class="footer-contact">
         <!-- <h1>GET IN TOUCH:</h1> -->
-        <div class="contact-info">
+         <!-- <div class="'cool-font"> -->
+            <div class="contact-info">
             <p>
-                <i class="fa fa-envelope" style="font-size:36px"></i> &nbsp <a href="mailto:wlillyngo@gmail.com">Email</a> &emsp;&emsp;&emsp;&emsp;&emsp;
+                <i class="fa fa-envelope" style="font-size:36px"></i> &nbsp <a href="mailto:wlillyngo@gmail.com" target="_blank" class="cool-font">Email</a> &emsp;&emsp;&emsp;&emsp;&emsp;
                 <!-- <i class="fa fa-phone" style="font-size:36px"></i>&nbsp&nbsp <a href="tel:+4847142954"></a>&emsp;&emsp;&emsp;&emsp;&emsp; -->
-                <i class="fa fa-linkedin-square" style="font-size:5vh"></i> &nbsp <a href="https://www.linkedin.com/in/lillyn-g" target="_blank"> LinkedIn</a>
-                &emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa fa-github" style="font-size:36px"></i>  &nbsp  <a href="https://github.com/ngosterly" target="_blank">GitHub</a>
+                <i class="fa fa-linkedin-square" style="font-size:5vh"></i> &nbsp <a href="https://www.linkedin.com/in/lillyn-g" target="_blank" class="cool-font"> LinkedIn</a>
+                &emsp;&emsp;&emsp;&emsp;&emsp;<i class="fa fa-github" style="font-size:36px"></i>  &nbsp  <a href="https://github.com/ngosterly" target="_blank" class="cool-font">GitHub</a>
             </p>
-        </div>
+            </div>
+        <!-- </div> -->
+        
     </footer>
 
     <script>
